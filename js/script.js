@@ -53,3 +53,40 @@ for(let index in team){
   console.log("-------------------------");
 }
 
+// Stampo i miei dati dentro l'html
+const teamcontainer = document.querySelector(".team-container");
+stampaTeam();
+
+function stampaTeam(){
+
+  for(let teamSingolMember of team){
+    stampaTeamMember(teamSingolMember)
+  }
+
+}
+
+function stampaTeamMember(teamSingolMember){
+
+  let divStampa = teamcontainer.innerHTML;
+
+  const {immagineuno, nome, ruolo} = teamSingolMember;
+
+  divStampa += `
+  <div class="team-card">
+    <div class="card-image">
+      <img
+      src= img/${immagineuno}
+      alt= ${nome}
+      />
+    </div>
+    <div class="card-text">
+      <h3>${nome}</h3>
+      <p>${ruolo}</p>
+    </div>
+  </div>
+  `;
+
+  teamcontainer.innerHTML = divStampa;
+  /* console.log(divStampa); */
+}
+
