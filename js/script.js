@@ -4,45 +4,41 @@
   - Stampare dinamicamente dal js le card e togliere la card di esempio dall'html
 */
 
-// Immagini
-/* var immagineuno = document.createElement("img");;
-img.src = "img/wayne-barnett-founder-ceo.jpg"; */
-
 // Array dei membri
 const team = [
 
   {
-    immagineuno: "Text",
+    immagineuno: "wayne-barnett-founder-ceo.jpg",
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
   },
   
   {
-    immagineuno: "Text",
+    immagineuno: "angela-caroll-chief-editor.jpg",
     nome: "Angela Caroll",
     ruolo: "Chief Editor",
   },
 
   {
-    immagineuno: "Text",
+    immagineuno: "walter-gordon-office-manager.jpg",
     nome: "Walter Gordon",
     ruolo: "Office Manager",
   },
 
   {
-    immagineuno: "Text",
+    immagineuno: "angela-lopez-social-media-manager.jpg",
     nome: "Angela Lopez",
     ruolo: "Social Media Manager",
   },
 
   {
-    immagineuno: "Text",
+    immagineuno: "scott-estrada-developer.jpg",
     nome: "Scott Estrada",
     ruolo: "Developer",
   },
 
   {
-    immagineuno: "Text",
+    immagineuno: "barbara-ramos-graphic-designer.jpg",
     nome: "Barbara Ramos",
     ruolo: "Graphic Designer",
   }
